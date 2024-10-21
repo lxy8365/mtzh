@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>original God</title>  
+    <style>  
+        body, html {  
+            margin: 0;  
+            padding: 0;  
+            width: 100%;  
+            height: 100%;  
+            overflow: hidden; /* 防止不必要的外部滚动 */  
+        }  
+  
+        .image-container {  
+            width: 100%;  
+            height: 100vh; /* 使用视口高度，但允许内容溢出 */  
+            overflow-y: auto; /* 允许垂直滚动 */  
+            overflow-x: hidden; /* 禁止水平滚动 */  
+            -webkit-overflow-scrolling: touch; /* 在iOS上启用平滑滚动 */  
+        }  
+  
+        .image-container img {  
+            max-width: 100%;  
+            height: auto; /* 保持图片比例 */  
+            display: block; /* 移除图片底部的间隙 */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="image-container">  
+        <img src="a.jpg" alt="长图片，可垂直滑动查看">  
+    </div>  
+  
+    <!-- 你可以在这里添加JavaScript，如果有需要的话 -->  
+    <script>  
+        // 例如，可以在这里添加一些交互效果，如图片加载完成后的动画等  
+    </script>  
+</body>  
+</html>
